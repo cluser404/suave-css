@@ -1,15 +1,17 @@
 # [Suave CSS 1.0](http://cluser404.github.io/suave-css)
 ### A scss Fork of Suave UI
 
-#### [Suave UI original git repo](http://uoziod.github.io/suave-ui).
-
 [Suave UI](https://uoziod.github.io/suave-ui/demo/) was designed for web-applications based on [AngularJS](http://angularjs.org).
 
-As AngularJS turned into Angular Suave UI became redundent.
-Suave CSS is an effort to keep the Suave style alive.
+[Suave UI Website](http://uoziod.github.io/suave-ui).
+
+As __AngularJS__ turned into __Angular_ Suave UI became redundent.
+
+**Suave CSS** is an effort to keep the Suave style alive.
+
 Suave has a decent look and feel. The colors and gradients are well matched.
 
-Special thanks to Semyon Vyskubov for giving the world Suave UI
+Special thanks to **Semyon Vyskubov** for giving the world **Suave UI**
 
 ## License
 
