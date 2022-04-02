@@ -1,3 +1,5 @@
+@use "_mixins" as mixins
+
 /**
 * Basic values
 */
@@ -69,5 +71,5 @@ $interact: (
 	$this-text: nth($item, 4)
 
 	.su-interact-#{$this}
-		@include gradient-v($this-c1, $this-c2)
+		@include mixins.gradient-v($this-c1, $this-c2)
 		color: $this-text
