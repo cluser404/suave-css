@@ -1,11 +1,13 @@
+@use "variables";
+
 /**
 * Basic elements
 */
 
 BODY {
   font: 16px sans-serif;
-  background: $body-back;
-  color: $text-def;
+  background: variables.$body-back;
+  color: variables.$text-def;
   margin: 0;
   padding: 0;
   padding-top: 18px;
@@ -16,7 +18,7 @@ BODY {
 }
 
 A {
-  color: $c12;
+  color: variables.$c12;
   text-decoration: none;
   cursor: pointer;
 
@@ -48,12 +50,12 @@ H3 {
 H4 {
   font-size: 16px;
 }
-
-&.su-big {
+// removed & from before .su-big because dirt sass was throwing error
+.su-big {
   font-size: 18px;
 }
 
-&.su-small {
+.su-small {
   font-size: 13px;
 }
 
@@ -66,7 +68,7 @@ H4 {
 HR {
   clear: both;
   border: none;
-  border-top: 1px solid $ruler-def;
+  border-top: 1px solid variables.$ruler-def;
   margin: 25px 0;
 
   &.su-big {
@@ -74,7 +76,7 @@ HR {
   }
 
   &.su-dark {
-    border-color: $ruler-dark;
+    border-color: variables.$ruler-dark;
   }
 }
 
