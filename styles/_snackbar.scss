@@ -1,3 +1,6 @@
+@use "variables" as vars;
+@use "mixins" as mixins;
+
 .su-snackbars {
   position: fixed;
   left: 0;
@@ -18,10 +21,10 @@
     margin: 5px 0;
     line-height: 34px;
     max-height: 34px;
-    box-shadow: 0 0 5px transparentize($c0, .7);
+    box-shadow: 0 0 5px transparentize(vars.$c0, .7);
 
-    @include animation-prop(duration, .2s);
-    @include transition(max-height .2s);
+    @include mixins.animation-prop(duration, .2s);
+    @include mixins.transition(max-height .2s);
 
     .su-close {
       position: absolute;
@@ -32,14 +35,14 @@
       max-height: 0;
     }
 
-    @each $color in $interact {
+    @each $color in vars.$interact {
       $type:      nth($color, 1);
       $this-c1:   nth($color, 2);
       $this-c2:   nth($color, 3);
       $this-text: nth($color, 4);
 
       &.su-#{$type} {
-        @include gradient-v($this-c1, $this-c2);
+        @include mixins.gradient-v($this-c1, $this-c2);
         color: $this-text;
         text-align: center;
 

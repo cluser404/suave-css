@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 .su-popup {
   position: fixed;
   width: 100%;
@@ -5,7 +7,7 @@
   top: 0;
   left: 0;
   z-index: 10;
-  background: transparentize($c0, .25);
+  background: transparentize(vars.$c0, .25);
   overflow-y: auto;
 
   .su-close {
@@ -14,14 +16,14 @@
     right: 0;
 
     font-size: 27px;
-    color: $c6;
+    color: vars.$c6;
     text-align: center;
 
     width: 63px;
     line-height: 63px;
 
     &:hover {
-      color: darken($c6, 3);
+      color: darken(vars.$c6, 3);
     }
   }
 
@@ -44,7 +46,7 @@
     padding: 18px 65px 15px 30px;
     min-height: 30px;
     line-height: 30px;
-    border-bottom: 1px solid $c5;
+    border-bottom: 1px solid vars.$c5;
 
     H2 {
       margin: 0;
@@ -55,29 +57,29 @@
     display: table-cell;
     vertical-align: top;
     width: 269px;
-    border-right: 1px solid $c5;
+    border-right: 1px solid vars.$c5;
 
     LI {
       padding: 14px 60px 14px 30px;
       cursor: default;
-      color: $c13;
+      color: vars.$c13;
 
       &:not(.su-divider):hover {
-        background: $c3;
+        background: vars.$c3;
       }
     }
 
     .su-hilite {
-      color: $c15;
+      color: vars.$c15;
     }
 
     .su-divider {
-      color: $c7;
+      color: vars.$c7;
     }
 
     .su-active {
-      background: $c8 !important;
-      color: $c1;
+      background: vars.$c8 !important;
+      color: vars.$c1;
     }
   }
 
@@ -92,7 +94,7 @@
   .su-container {
     padding: 20px 30px;
     border-radius: 5px;
-    background-color: $c2;
+    background-color: vars.$c2;
 
     :last-child {
       margin-bottom: 0;

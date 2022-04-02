@@ -1,5 +1,7 @@
+@use "variables" as vars;
+
 .su-dropdown {
-  background: $c1;
+  background: vars.$c1;
   position: absolute;
   z-index: 5;
 
@@ -10,9 +12,9 @@
   white-space: normal;
   text-align: left;
 
-  border: 1px solid $c6;
+  border: 1px solid vars.$c6;
   border-radius: 2px;
-  box-shadow: 0 0 25px 0 transparentize($c0, .85);
+  box-shadow: 0 0 25px 0 transparentize(vars.$c0, .85);
 
   &:before,
   &:after {
@@ -23,13 +25,13 @@
     left: 20px;
     content: '';
     border: transparent 10px solid;
-    border-bottom-color: $c1;
+    border-bottom-color: vars.$c1;
   }
 
   &:before {
     z-index: 1;
     margin-bottom: 0;
-    border-bottom-color: $c6;
+    border-bottom-color: vars.$c6;
   }
 
   :last-child {
@@ -55,6 +57,6 @@
 
   I {
     font-size: 20px;
-    color: $c7;
+    color: vars.$c7;
   }
 }
