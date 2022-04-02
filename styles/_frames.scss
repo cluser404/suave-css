@@ -1,17 +1,19 @@
+@use "variables" as vars;
+
 .su-frame {
-  border: 1px solid $c6;
+  border: 1px solid vars.$c6;
   border-radius: 5px;
-  box-shadow: 0 2px 3px transparentize($c5, .1);
+  box-shadow: 0 2px 3px transparentize(vars.$c5, .1);
 
   padding: 20px 30px;
   margin: 0 0 18px;
 
-  @each $item in $interact {
+  @each $item in vars.$interact {
     $this: unquote(nth($item, 1));
     $color: mix(nth($item, 2), nth($item, 3));
 
     &.su-#{$this} {
-      box-shadow: inset 4px 0 0 0 $color, 0 2px 3px transparentize($c5, .1);
+      box-shadow: inset 4px 0 0 0 $color, 0 2px 3px transparentize(vars.$c5, .1);
     }
   }
 
