@@ -1,0 +1,24 @@
+@use "variables" as vars;
+@use "mixins" as mixins;
+
+@for $i from 0 to length(vars.$basic-colors) {
+	.su-c#{$i} {
+		color: nth(vars.$basic-colors, $i+1);
+	}
+
+	.su-bc#{$i} {
+		background-color: nth(vars.$basic-colors, $i+1);
+	}
+}
+
+@each $item in vars.$interact {
+	$this: unquote(nth($item, 1));
+	$this-c1: nth($item, 2);
+	$this-c2: nth($item, 3);
+	$this-text: nth($item, 4);
+
+	.su-interact-#{$this} {
+		@include mixins.gradient-v($this-c1, $this-c2);
+		color: $this-text;
+	}
+}
