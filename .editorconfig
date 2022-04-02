@@ -29,11 +29,6 @@ indent_size = 2
 
 # Styles
 [*.scss]
-indent_style = space
-indent_size = 2
-
-# sass
-[*.sass]
 indent_style = tab
 indent_size = 4
 
@@ -44,5 +39,5 @@ indent_size = 2
 
 # package.json
 [{package.json}]
-indent_style = space
+indent_style = tab
 indent_size = 2
