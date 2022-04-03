@@ -5,7 +5,7 @@
 
 [Suave UI Website](http://uoziod.github.io/suave-ui).
 
-As __AngularJS__ turned into __Angular_ Suave UI became redundent.
+As _AngularJS_ turned into _Angular_ awesome Suave UI became abundant.
 
 **Suave CSS** is an effort to keep the Suave style alive.
 
@@ -17,5 +17,5 @@ Special thanks to **Semyon Vyskubov** for giving the world **Suave UI**
 
 - **Suave CSS** is inspired by [Suave UI](http://uoziod.github.io/suave-ui) licensed under the MIT
 - **Suave UI** was inspired by [Actiguide](https://github.com/tansky/actiguide) licensed under the MIT
-- [Font Awesome](http://fontawesome.io/) font is licensed under the SIL OFL 1.1 (not using anymore)
-- [Animate.css](http://daneden.github.io/animate.css/) is licensed under MIT (not using anymore)
+- [Font Awesome](http://fontawesome.io/) font is licensed under the SIL OFL 1.1 (Suave UI requirement. not included in Suave CSS)
+- [Animate.css](http://daneden.github.io/animate.css/) is licensed under MIT (Suave UI requirement. not included in Suave CSS)
