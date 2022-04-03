@@ -45,7 +45,7 @@ P.small {
 }
 
 .code {
-  white-space: nowrap;
+  white-space: pre;
   background: transparentize(variables.$c5, .7);
   padding: 15px;
   border: 1px dotted variables.$c6;
@@ -53,6 +53,7 @@ P.small {
   border-right: none;
   overflow-x: auto;
   font: 15px "Courier New" monospace;
+  tab-size: 4;
 
   strong {
     font: bold 15px "Courier New" monospace;
