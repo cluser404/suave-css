@@ -19,11 +19,11 @@ indent_size = 2
 
 # Templates
 [*.tmpl]
-indent_style = space
+indent_style = tab
 indent_size = 2
 
-# Jade
-[*.jade]
+# pug
+[*.pug]
 indent_style = tab
 indent_size = 2
 
@@ -34,7 +34,7 @@ indent_size = 4
 
 # JavaScript
 [*.js]
-indent_style = space
+indent_style = tab
 indent_size = 2
 
 # package.json
