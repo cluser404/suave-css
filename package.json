@@ -1,7 +1,7 @@
 {
-  "name": "suave-ui",
-  "version": "0.3.1",
-  "description": "suave css",
+  "name": "suave-css",
+  "version": "1.0.0",
+  "description": "A scss fork of suave ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/uoziod/suave-ui.git"
