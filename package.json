@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/uoziod/suave-ui",
   "devDependencies": {
+    "jade": "^0.29.0",
     "sass": "^1.49.11"
   },
   "contributors": [
