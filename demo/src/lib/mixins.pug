@@ -1,1 +1,15 @@
-doctype html
+mixin section(title, subtitle, href_id)
+	div.su-box.su-m50(id=href_id)
+		h2.su-c0.su-m5 #{title}
+		h4.su-c7.su-m0 #{subtitle}
+		hr.su-mt10
+		if block
+			block
+		else
+			p <i>[ No content written ]</i>
+
+mixin code(code_id)
+	div.su-box
+		pre.su-frame.code
+			code(id=code_id)
+				block
