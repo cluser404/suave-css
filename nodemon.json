@@ -10,5 +10,5 @@
         "styles/"
     ],
     "delay": 100,
-    "ext": "jade json scss"
+    "ext": "pug json scss"
 }
