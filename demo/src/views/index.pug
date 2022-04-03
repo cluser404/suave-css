@@ -1,9 +1,38 @@
-doctype html
-html(lang="en")
-	head
-		title Suave Css
-		link(rel="stylesheet", href="../dist/styles.css")
-	body.su-bc5
-		h1 Suave CSS 
-		button.su-positive Possitive Command Action
-		hr.su-dark
+extends ../lib/layout.pug
+
+include ../lib/mixins.pug
+
+block in_body
+	+section("Introduction", "get to know suave css", "introduction")
+		p 
+			| Welcome to <strong>Suave CSS</strong> Documentation
+			|<br>
+			| Use the navigation in top to explore the docs.
+			| you can also check Suave UI docs which might not behave as expected.
+		p
+			| Everything here <i>including this documentation</i>
+			| is a showcase of suave css
+			| Which means it's encouraged that you make use of your inspect tool
+	
+	+section("Simple Intregation", "adding suave css to a html file", "simple-intregation")
+		p 
+			| To get started with a simple html file use this snippet 
+		+code("simple-intregation_code")
+		script. 
+			eval_code("simple-intregation_code", 
+			`<!DOCTYPE html>
+			<html lang="en">
+			
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Document</title>
+				
+				<!--link to suave stylesheet-->
+				<link rel="stylesheet" href="suave-css/dist/styles.css">
+			</head>
+
+			<body>	
+			</body>
+			</html>
+			`);
