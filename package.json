@@ -13,7 +13,7 @@
   "scripts": {
     "build-css": "npx sass styles:dist",
     "clean-html": "rm demo/*.html",
-    "build-html": "npm run clean-html & npx jade demo/src/views --out demo",
+    "build-html": "npm run clean-html & npx pug demo/src/views --out demo",
     "build": "npm run build-css && npm run build-html",
     "watch-css": "npx nodemon --exec \"npm run build-css\"",
     "watch-html": "npx nodemon --exec \"npm run build-html\"",
@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/uoziod/suave-ui",
   "devDependencies": {
-    "jade": "^0.29.0",
     "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.49.11"
   },
   "contributors": [
