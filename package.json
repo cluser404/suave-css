@@ -11,7 +11,9 @@
     "email": "sv@rv7.ru"
   },
   "scripts": {
-    "build-css": "npx sass styles:dist"
+    "build-css": "npx sass styles:dist",
+    "clean-html": "rm demo/*.html",
+    "build-html": "npm run clean-html & npx jade demo/src/views --out demo"
   },
   "license": "MIT",
   "bugs": {
