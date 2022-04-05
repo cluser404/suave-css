@@ -1,0 +1,68 @@
+extends ../lib/layout.pug
+
+block body
+	+section("Buttons are Important", "shinny stuff are here", "buttons-are-important")
+		p
+			| Buttons are the single most important element in any UI.
+		p
+			| As newer javascript frameworks arrived, classic js components
+			| got replaced by reuseable framework components. It removed
+			| <br>
+			| the burden of
+			| writing long tedious js components with massive initialization code.
+		p
+			| Mordern frameworks also empowered basic html5 elements by adding states to them.
+			| This enabled programmers do miracles with basic stuff like a simple button element.
+		p
+			| <strong>Suave CSS</strong> inherits <a href="https://uoziod.github.io/suave-ui/demo/buttons.html">Suave UI</a>'s
+			| awesome collection of shinny button elements
+
+		// todo: make a mixin for page content lising
+		h3.su-m8 Contents:
+		ul.su-m40.su-mt0
+			li <a href="#default-button-element">Default button element</a>
+			li <a href="#button-with-interaction-colors">Button with interaction colors</a>
+			li <a href="#disabling-a-button">Disabling a button</a>
+			li <a href="#button-loadin-state">Button loading state</a>
+			li <a href="#flexbox-powered-button-group">flexbox powered Button Group</a>
+
+	+section("Default button element", "buttons are styled by default", "default-button-element")
+		p this is a default button
+		+example-box
+			+example
+				button snappy snappy
+
+		p In the code sample you can see only a simple button tag. No class needed
+		+code("Default-button-element_code")
+		script.
+			eval_code("Default-button-element_code",
+			`<button>snappy snappy</button>
+			`);
+
+	+section("Button with interaction colors", "the natural way of telling the difference", "button-with-interaction-colors")
+		p these buttons showcase interaction colors
+		+example-box
+			+example
+				button.su-positive Positive
+			+example
+				button.su-negative Negative
+			+example
+				button.su-violet Violet
+			+example
+				button.su-black Black
+			+example
+				button.su-orange Orange
+		p the code requires you to add simple classes to the buttons
+		+code("button-with-interaction-colors_code")
+		script.
+			eval_code("button-with-interaction-colors_code",
+			`<button class="su-positive">Positive</button>
+
+			<button class="su-negative">Negative</button>
+
+			<button class="su-violet">Violet</button>
+
+			<button class="su-black">Black</button>
+
+			<button class="su-orange">Orange</button>
+			`);
